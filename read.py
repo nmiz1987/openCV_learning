@@ -1,9 +1,9 @@
-# import cv2 as cv
+import cv2 as cv
 
 # reading images
-# img = cv.imread('1.jpg')
-# cv.imshow('img', img)
-# cv.waitKey(0)  # press '0' to break
+img = cv.imread('src/1.jpg')
+cv.imshow('img', img)
+cv.waitKey(0)  # press '0' to break
 
 # reading videos
 
