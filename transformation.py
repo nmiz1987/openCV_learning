@@ -17,8 +17,8 @@ def translate(img, x, y):  # x,y are number of pixels you want to shift along th
     return cv.warpAffine(img, transMat, dimenstions)
 
 
-# translated = translate(img, -100, 100)
-# cv.imshow("trans", translated)
+translated = translate(img, -100, 100)
+cv.imshow("trans", translated)
 
 
 # Rotation
@@ -34,20 +34,20 @@ def rotate(img, angle, rotPoint=None):
     return cv.warpAffine(img, rotMat, dimenstion)
 
 
-# rotated = rotate(img, 9, (1,1))
-# cv.imshow("Rotate", rotated)
+rotated = rotate(img, 9, (1,1))
+cv.imshow("Rotate", rotated)
 
 # Resizing
-# resized = cv.resize(img, (500, 500), interpolation=cv.INTER_AREA)
-# cv.imshow("resized", resized)
+resized = cv.resize(img, (500, 500), interpolation=cv.INTER_AREA)
+cv.imshow("resized", resized)
 
 # Flipping
-# flip = cv.flip(img, -1) # 0 - vertically , 1 - horizontally, -1 - both
-# cv.imshow("Flip", flip)
+flip = cv.flip(img, -1) # 0 - vertically , 1 - horizontally, -1 - both
+cv.imshow("Flip", flip)
 
 # Cropping
-# cropped = img[200:400, 300:400]
-# cv.imshow("cropped", cropped)
+cropped = img[200:400, 300:400]
+cv.imshow("cropped", cropped)
 
 
 cv.waitKey(0)  # press '0' to break
